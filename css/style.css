@@ -17,6 +17,12 @@ body {
   place-content: center;
   background-color: var(--clr-primary-dark-cyan);
   font-family: var(--font-family);
+
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom 15vw right 50vw, top 20vw left 50vw;
 }
 
 hr {
@@ -78,41 +84,4 @@ hr {
 }
 .attribution a {
   color: #ffffff;
-}
-
-/* background */
-.bg__top,
-.bg__bottom {
-  position: fixed;
-  z-index: -1;
-  max-width: fit-content;
-}
-
-.bg__top {
-  top: -500px;
-  left: -250px;
-}
-
-.bg__bottom {
-  top: 300px;
-  left: 800px;
-}
-
-@media (max-width: 800px) {
-  /* background */
-  .bg__top,
-  .bg__bottom {
-    position: fixed;
-    z-index: -1;
-  }
-
-  .bg__top {
-    top: -600px;
-    left: -700px;
-  }
-
-  .bg__bottom {
-    top: 350px;
-    left: 120px;
-  }
 }
